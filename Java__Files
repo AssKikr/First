@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------------------------------------------------------------
 $Factorial$
 --------------------------------------------------------------------------------------------------------------------------------
+  import javax.swing.JOptionPane;
  public class Fact
  {
- import javax.swing.JOptionPane;
  static void Factorial()
     { 
         int i, no, fact=1;
-        no=JOptionPane.showInputDialog("Enter Number");
+        no=Integer.parseInt(JOptionPane.showInputDialog("Enter Number"));
         for(i=1;i<=no;i++)
         {
           fact=fact*i;    
@@ -23,13 +23,13 @@ $Factorial$
 --------------------------------------------------------------------------------------------------------------------------------
 $Palindrone$
 --------------------------------------------------------------------------------------------------------------------------------
+ import javax.swing.JOptionPane;
 public class Palin
  {
- import javax.swing.JOptionPane;
  static void Palindrone()
     {                                         
         int a,b, c, d = 0;
-        a = JOptionPane.showInputDialog("Enter Number");
+        a = Integer.parseInt(JOptionPane.showInputDialog("Enter Number"));
         b=a;
         while (a > 0) 
         {
@@ -38,9 +38,9 @@ public class Palin
             d = (d * 10) + c;
         }
         if(d==b)
-        JOptionPane.showMessageDialog(null, "It is a Palindrom Number"); 
+        JOptionPane.showMessageDialog(null, "It is a Palindrone Number"); 
         else
-        JOptionPane.showMessageDialog(null, "It is not a Palindrom Number");
+        JOptionPane.showMessageDialog(null, "It is not a Palindrone Number");
     }
     public static void main(String args[]) 
     {
