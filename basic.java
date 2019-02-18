@@ -1,6 +1,7 @@
 Lang- $Java$
 
 import javax.swing.JOptionPane;
+//or could use -->  import javax.swing.*;
 class Basic
 { 
   static int ret()
