@@ -3,6 +3,7 @@ $Factorial$
 --------------------------------------------------------------------------------------------------------------------------------
   package Fact;
   import javax.swing.JOptionPane;
+//or could use -->  import javax.swing.*;
  public class Fact
  {
  static void Factorial()
